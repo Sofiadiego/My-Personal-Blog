@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background: #36454F;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: Arial, sans-serif;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #C0C0C0;
+    transition: 0.5s;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    padding: 20px;
+    background: #eee;
+}
+
+aside .search {
+    margin-bottom: 20px;
+}
+
+aside .search label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+aside .search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+aside .categories, aside .recent-posts {
+    margin-bottom: 20px;
+}
+
+aside h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0px;
+}
+
+aside ul li {
+    margin-bottom: 10px; 
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+aside ul li a:hover {
+    color: #0e94A0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #196b72;
+}
+
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0e94A0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%
+}
+
+.contact-section input[type="submit"] {
+    background: #0e94A0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section input[type="submit"]:hover {
+    background: #0b7382;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    color: #0e94A0;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #0e94A0;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background: #36454F;
+    color: white;
+    padding: 0px 0;
+}
+
+.footer-content {
+    background: #36454F;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-content div {
+    margin: 10px;
+}
+
+.footer-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.rights {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+    header ul {
+        width: 100%;
+        background: #0e94A0;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header .logo {
+        margin-left: .5em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+} 

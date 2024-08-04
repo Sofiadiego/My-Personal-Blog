@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>My Personal Blog</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="post.html">Post</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <div class="main-content">
+            <section class="contact-section">
+                <h2>Contact Me</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Email: <a href="mailto:mohamedsafiya541@gmail.com">mohamedsafiya541@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p>Address: 123 Main Street, Anytown, USA</p>
+                </div>
+            </section>
+        </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="follow-me">
+                    <h2>Follow Me</h2>
+                    <P>Instagram | Twitter | Facebook</P>
+                </div>
+                <div class="sitemap">
+                    <h2>Sitemap</h2>
+                    <P>Home | About | Post | Contact</P>
+                </div>
+                <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+ </html>
